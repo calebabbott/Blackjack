@@ -258,7 +258,7 @@ function getCardValue(card) {
 }
 
 function revealHiddenCard() {
-    playerOneCardsEl.innerHTML = playerOneCards.map(card => `<img src="C:/Users/cabbott/OneDrive - Microsoft/Documents/JavaScript/Scrimba/Blackjack/cards/${card}.png" alt="${card}" />`).join("");
+    playerOneCardsEl.innerHTML = playerOneCards.map(card => `<img src="/Blackjack/cards/${card}.png" alt="${card}" />`).join("");
     playerOneSumEl.textContent = "Player 1 Sum: " + playerOneSum;
 }
 
