@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Blackjack</h1>
+        <h3 id="message-el">Want to play a round?</h3>
+        <h2>DEALER:</h2>
+        <div id="player1-cards-el">
+            <img id="hidden" src="./cards/BACK.png" style="display: none">
+        </div>
+        <div id="player1-sum-el" style="display: none"></div>
+        
+
+        <h2>YOU: </h>
+        <div id="player2-cards-el">
+        </div>
+
+        <div id="player2-sum-el"></div>
+        
+        <button onclick="startGame()" id="startgame" style="display: inline">Start Game</button>
+        <button onclick="newCard()" id="newcard" style="display: none">Hit</button>
+        <button onclick="switchPlayer()" id="switchplayer" style="display: none"></button>
+        <button onclick="endGame()" id="endgame" style="display: none">Stay</button>
+
+        <script src="blackjack.js"></script>
+    </body>
+</html>
